@@ -1,0 +1,150 @@
+html,body{
+	width:100%;
+	margin:0px auto;
+	overflow-x:hidden;
+}
+#upper{
+	background:black;
+}
+#mynav>.navbar-right>li>a:hover{
+	color:white;
+}
+#middle{
+	background:
+    
+    linear-gradient(
+      rgb(178, 21, 21,0.5), 
+      rgb(114, 50, 50,0.7)
+    ),
+   
+    url(../images/1.jpg);
+	background-repeat: no-repeat;
+	background-position:center center;
+	width:100%;
+	background-size: cover;
+	margin:0px;
+	height:85%;
+	left:0px;
+	top:0px;
+	background-attachment: fixed;
+}
+#middle>.col-md-12>.col-md-offset-3>.mainText{
+	color:white;
+	margin-top:200px;
+	text-align:center;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+#middle>.col-md-12>.col-md-offset-3>.subText{
+	text-align:center;
+	color:rgb(183, 146, 156);
+	letter-spacing:0.1em;
+	font-size:1.3em;
+}
+#middle>.col-md-12>.col-md-offset-5>a{
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	color:white;
+}
+
+#middle>.col-md-12>.col-md-offset-5>a>button{
+	background:rgb(45,40,40);
+	border:2px solid teal;
+	margin-top:10px;
+	height:8%;
+	margin-left: 10%;
+}
+#middle>.col-md-12>.col-md-offset-5>a>button:hover{
+	border-radius:20px;
+}
+
+#buying>.col-md-offset-4>.sectionText{
+	color:rgb(135, 21, 24);
+	letter-spacing:0.1em;
+	font-weight:bold;
+}
+#buying>#bod{
+	border:3px solid rgb(135, 21, 24);
+	width:10%;
+}
+#buying>.col-md-offset-3>.col-md-6>#loc{
+	background:rgb(135, 21, 24);
+	margin-top:15px;
+	width:100%; 
+	color:white;
+	border:0px;
+	text-align:center;
+	height:30px;
+	font-size:1.3em;
+}
+#buying>.col-md-offset-3>.col-md-6>#grp{
+	background:rgb(135, 21, 24);
+	margin-top:15px;
+	width:100%; 
+	color:white;
+	border:0px;
+	text-align:center;
+	height:30px;
+	font-size:1.3em;
+}
+#feedback{
+	margin-top:20px;
+	background:linear-gradient(
+     rgba(114, 6, 47,0.5), 
+      rgba(89, 9, 39,0.8)
+    ),
+    url(../images/1.jpg);
+    background-size:cover;
+}
+#feedback>.col-md-offset-3>h2{
+	text-align:center;
+	color:white;
+	font-family:bold;
+}
+#feedback>.col-md-offset-3>textarea{
+	width:100%;
+	padding:10px;
+	border-radius:20px;
+	border:0px;
+	margin-top:10px;
+	background: rgb(71, 8, 31);
+	color:white;
+	overflow: hidden;
+}
+#feedback>.col-md-offset-3>input{
+	width:80%;
+	margin-left:10%;
+	margin-top:20px;
+	background:rgb(61, 15, 32);
+	border:0px;
+	color:white;
+	height:30px;
+	border-radius:20px;
+}
+#feedback>.col-md-offset-3>input:hover{
+	background:rgb(135, 9, 55);
+}
+#contact>.col-md-offset-4>h2{
+	color:rgb(168, 8, 63);
+	font-family: bold;
+	text-align: center;
+}
+#contact>.col-md-12>.col-md-offset-1>a>i{
+	width:80%;
+	margin-left:10%;
+}
+#footer{
+	background: rgb(58, 34, 42);
+	margin-top: 20px;
+}
+#footer>.col-md-offset-3>h4{
+	text-align: center;
+	color:white;
+	font-family: bold;
+}
+#footer>.col-md-offset-2{
+	margin-top:20px;
+}
+#footer>.col-md-offset-2>.col-md-offset-1>label{
+	color:teal;
+}

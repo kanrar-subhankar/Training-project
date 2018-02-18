@@ -1,0 +1,16 @@
+#cazz>#selectImage>.submit{
+	background:rgb(165, 29, 59);
+	color:white;
+	border:0px;
+	width:20%;
+	height:30px;
+	margin-top:10px;
+	text-transform: uppercase;
+	font-size:100%;
+	border-radius:10px 10px 10px 10px;
+	position:fixed;
+}
+#cazz>#selectImage>.submit:hover{
+	background:rgb(130, 14, 39);
+
+}
