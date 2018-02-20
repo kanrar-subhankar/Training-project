@@ -1,8 +1,5 @@
 <?php
 session_start();
-if(!isset($_SESSION['name']) && !isset($_REQUEST['id'])){
-	header("location:topbar.php");
-}
 
 ?>
 
@@ -35,7 +32,7 @@ if(!isset($_SESSION['name']) && !isset($_REQUEST['id'])){
 	$(document).ready(function (e) {
 	$("#uploadimage").on('submit',(function(e) {
 	e.preventDefault();
-	var x=1;
+	var x=Math.random();
 	$("#message").empty();
 	$.ajax({
 	url: "uploadImage.php?id="+x, // Url to which the request is send
@@ -46,7 +43,7 @@ if(!isset($_SESSION['name']) && !isset($_REQUEST['id'])){
 	processData:false,        // To send DOMDocument or non processed data file it is set to false
 	success: function(data)   // A function to be called if request succeeds
 	{
-		$('#message').html(data);
+		alert(data);
 	}
 	});
 	}));

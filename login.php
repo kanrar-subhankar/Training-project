@@ -19,7 +19,7 @@ if(isset($_REQUEST['user_name1']) && isset($_REQUEST['user_mail1']) && isset($_R
 		mysqli_query($h,"insert into e_blood(full_name,e_mail,password) values('$name','$mail','$encrypt_password')");
 		$_SESSION['name']=$name;
 		$_SESSION['mail']=$mail;
-		header('location:topbar.php?id='.md5($r['full_name']."/"));
+		header('location:topbar.php?id='.md5($r['full_name'].'/'));
 		}
 	}
 }
@@ -44,7 +44,7 @@ if(isset($_REQUEST['user_name1']) && isset($_REQUEST['user_mail1']) && isset($_R
 				$r=mysqli_fetch_assoc($result);
 				$_SESSION['name']=$r['full_name'];
 				$_SESSION['mail']=$mail;
-				header('location:topbar.php?id='.md5($r['full_name']."/"));
+				header('location:topbar.php?id='.md5($r['full_name'].'/'));
 			}
 			else
 				$msg="No such user found.please register to use.";

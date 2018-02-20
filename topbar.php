@@ -11,6 +11,15 @@ if(isset($_REQUEST['error'])){
     echo "</script>";
 }
 
+$h=mysqli_connect('localhost','root','root','e-blood');
+$result=mysqli_query($h,"select imagepath from e_blood where full_name='$x'");
+      if(mysqli_affected_rows($h)>0){
+        $r=mysqli_fetch_assoc($result);
+        $pic= $r['imagepath'];
+      }
+      else{
+        $pic="upload/noimage.png";
+      }
 
 ?>
 <html>
@@ -94,6 +103,9 @@ if(isset($_REQUEST['error'])){
 <nav class="nav navbar-default navbar-fixed-top" >
   <div class="container-fluid" id="upper">
     <div class="navbar-header">
+    
+           <img src="<?php echo $pic ?>" style="border-radius:100%;width:50px;height:50px"/>
+      
       <h2 class="nav navbar-nav navbar-left"></h2>
           <button class="navbar-toggle" data-target="#mynav" data-toggle="collapse" type="button">
                   <span class="sr-only">Toggle Navigation</span>
